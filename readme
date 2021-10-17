@@ -1,0 +1,6 @@
+It needs three inputs
+1. Public playlist URL
+2. Amazon login id
+3. Amazon login pwd
+
+As of now it supports only import of playlist from wynk to prime music.
