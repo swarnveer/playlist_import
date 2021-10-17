@@ -82,7 +82,6 @@ def create_prime_music_playlist(imported_playlist,creds):
         )
         enter_playlist_name.clear()
         enter_playlist_name.send_keys(list(imported_playlist.keys())[0])
-        #
         driver.implicitly_wait(10)
         driver.find_element(By.ID,"dialogButton1").click()
         print("Playlist created successfully")
@@ -149,16 +148,6 @@ def add_music_to_prime(imported_playlist,creds):
             print(song_name+" : Couldn't be added")
             try:
                 driver.refresh()
-                '''
-                driver.implicitly_wait(10)
-                dialogButton2 = driver.get_element(By.XPATH,"/html/body/div/music-app/div[2]/div/div/div[4]/music-button[2]")
-                print(dialogButton2.textt)
-                x = driver.execute_script("return arguments[0].shadowRoot",dialogButton2)
-                x=x.find_element(By.TAG_NAME,"button")
-                driver.implicitly_wait(10)
-                x.click()
-                print(driver.getPageSource())
-                '''
             except :
                 pass
             
