@@ -154,3 +154,4 @@ def add_music_to_prime(imported_playlist,creds):
 
 songs_list = get_wynk_playlist(wynk_URL)
 add_music_to_prime(songs_list,[email,pwd])
+#Add support for more 
